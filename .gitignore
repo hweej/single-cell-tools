@@ -5,6 +5,7 @@
 .Rhistory
 
 # Datafiles
+data/
 *.h5ad
 *.RDS
 
