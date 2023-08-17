@@ -11,7 +11,7 @@ By default, r-reticulate will create a python virtualenv at `~/.virtualenv/r-ret
 ```python
 python3 -m venv ./.venv
 source ./.venv/bin/activate
-pip install -r R-reticulate-requirements.txt
+pip install -r requirements.txt
 ```
 Then in RScript
 ```R
