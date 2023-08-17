@@ -1,0 +1,11 @@
+# Virtualenv
+.venv
+
+# R
+.Rhistory
+
+# Datafiles
+*.h5ad
+*.RDS
+
+
