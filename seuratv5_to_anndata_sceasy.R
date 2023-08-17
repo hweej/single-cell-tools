@@ -1,3 +1,4 @@
+#!/usr/bin/env Rscript --vanilla
 library(reticulate)
 library(sceasy)
 use_virtualenv("./.venv")
