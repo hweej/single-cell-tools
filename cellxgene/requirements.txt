@@ -1,1 +1,2 @@
-cellxgene
+cellxgene==1.1.2
+gcsfs
