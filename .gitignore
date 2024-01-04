@@ -7,6 +7,9 @@
 # R
 .Rhistory
 
+# MISC
+.DS_Store
+
 # Datafiles
 data/
 *.h5ad
