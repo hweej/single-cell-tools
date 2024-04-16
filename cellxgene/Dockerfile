@@ -14,18 +14,17 @@ LABEL org.opencontainers.image.source="https://github.com/hweej/single-cell-tool
 LABEL org.opencontainers.image.title="cellxgene"
 LABEL org.opencontainers.image.description="cellxgene annotator tool"
 LABEL org.opencontainers.image.version=$CELLXGENE_VERSION
-# LABEL org.opencontainers.image.vendor=
-# LABEL org.opencontainers.image.licenses=
-# LABEL org.opencontainers.image.ref.name=
-# LABEL org.opencontainers.image.base.digest=
-# LABEL org.opencontainers.image.base.name=
 
 COPY requirements.txt requirements.txt
+COPY entrypoint.sh entrypoint.sh
+
 RUN python -m pip install --upgrade pip \ 
+    pip install h5py==3.10.0 \
     pip install cellxgene==${CELLXGENE_VERSION} \
     pip install gcsfs
     # pip install -r requirements.txt
 
+ENTRYPOINT ["./entrypoint.sh"]
 CMD ["cellxgene"] 
 
 
